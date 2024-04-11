@@ -1,0 +1,12 @@
+
+
+module andGate (
+    input wire a,
+    input wire b,
+
+    output wire c
+);
+
+
+
+git config --global user.email "you@example.com" 
