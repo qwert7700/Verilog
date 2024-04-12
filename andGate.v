@@ -7,4 +7,6 @@ module andGate (
     output wire c
 );
 
-// changing this file into a verilog file 
+// changing this file into a verilog file
+
+//This is a file in gitbranch3
