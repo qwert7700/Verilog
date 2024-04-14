@@ -23,7 +23,7 @@
 module counterShiftRegister_TB(
 
     );
-   
+    
     reg rst_n ;
     reg clk ;
     reg enable ;
