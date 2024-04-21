@@ -1,12 +1,11 @@
-
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/20/2024 04:28:04 PM
+// Create Date: 04/20/2024 04:53:48 PM
 // Design Name: 
-// Module Name: multiplexerM2_TB
+// Module Name: multiplexerM3_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -21,18 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module multiplexerM2_TB(
-
-    );
-    
-    
+module multiplexerM3_TB(
+);
+   
     reg a ;
     reg b ;
     reg sel ;
     
     wire o ;
     
-    multiplexerM2 multiplexerM2_inst(
+    multiplexerM3 multiplexerM3_inst(
         .a(a),
         .b(b),
         .sel(sel),
