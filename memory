@@ -1,0 +1,43 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 04/21/2024 02:54:34 PM
+// Design Name: 
+// Module Name: memory
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module memory(
+    input wire clk,
+    input wire wr,
+    input wire [2:0] addr,
+    input wire [15:0] data_in,
+    output wire [15:0] data_out
+    );
+    
+//    reg [0:7] mem [15:0];
+    
+    reg [15:0] mem [0:7];
+    
+    always @(posedge clk) begin 
+        if(wr) begin 
+            mem[addr] <= data_in ;
+        end
+    end 
+    
+    assign data_out = mem[addr] ;
+    
+endmodule
